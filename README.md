@@ -1,2 +1,2 @@
 # Calculator
-Calculator app with HTML, pure CSS, and vanilla JavaScript.
+Calculator app built with HTML, pure CSS, and vanilla JavaScript.
