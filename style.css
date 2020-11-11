@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;523;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Manrope;
+  font-weight: 800;
+}
+body {
+  background: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.calculator {
+  background: #333;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 5rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+button {
+  width: 24.5%;
+  height: 5rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  font-size: 3rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  box-shadow: 0 4px #999;
+  border: none;
+  outline: none;
+}
+button:hover {
+  background: rgb(189, 189, 189);
+}
+button:active {
+  background-color: rgb(189, 189, 189);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.equal {
+  width: 49.5%;
+}
+#screen {
+  background: white;
+  margin: 0.3rem;
+  height: 5rem;
+  text-align: right;
+  padding-right: 1rem;
+  font-size: 3.5rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.head {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+h1 {
+  font-size: 7rem;
+}
+p {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+.del,
+.ac {
+  background: red;
+  color: white;
+}
+.del:hover,
+.ac:hover {
+  background: white;
+  color: red;
+}
+
+/*scroll bar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 8rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+@media screen and (max-width: 1040px) {
+  body {
+    width: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .calculator {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
